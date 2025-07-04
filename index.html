@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Kind of Friend Are You?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="start-screen">
+      <h1>What Kind of Friend Are You?</h1>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="hidden">
+      <div id="question-box">
+        <h2 id="question-text"></h2>
+        <div id="answer-buttons"></div>
+      </div>
+    </div>
+
+    <div id="result-screen" class="hidden">
+      <h2 id="result-title"></h2>
+      <img id="result-image" class="hidden" src="" alt="Result Image" />
+      <p id="result-description"></p>
+      <button onclick="restartQuiz()">Take Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
